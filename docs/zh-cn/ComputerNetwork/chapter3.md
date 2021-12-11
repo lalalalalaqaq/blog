@@ -489,7 +489,7 @@ $$
 >
 > 以太网采用无连接的工作方式，对发送的数据帧不进行编号，也不要求对方发回确认。目的站收到有差错帧就把它丢弃，其他什么也不做
 
-![image-20201013213102777](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201013213102777.png)
+![image-20201013213102777](ComputerNetwork/image-20201013213102777.png)
 
 
 
