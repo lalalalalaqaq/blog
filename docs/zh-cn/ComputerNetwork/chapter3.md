@@ -489,8 +489,6 @@ $$
 >
 > 以太网采用无连接的工作方式，对发送的数据帧不进行编号，也不要求对方发回确认。目的站收到有差错帧就把它丢弃，其他什么也不做
 
-![image-20201013211620687](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201013211620687.png)
-
 ![image-20201013213102777](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201013213102777.png)
 
 
@@ -499,7 +497,7 @@ $$
 
 表示许多主机以多点接入的方式连接在一根总线上。
 
-![image-20201013215400688](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201013215400688.png)
+![image-20201013215400688](ComputerNetwork/image-20201013215400688.png)
 
 
 
@@ -507,7 +505,7 @@ $$
 
 是指每一个站在发送数据之前先要检测一下总线上是否有其他计算机在发送数据，如果有，则暂时不要发送数据，以免发生碰撞。
 
-![image-20201013215530979](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201013215530979.png)
+![image-20201013215530979](ComputerNetwork/image-20201013215530979.png)
 
 总线上并没有什么“载波”。因此， **“载波监听”就是用电子技术检测总线上有没有其他计算机发送的数据信号。**
 
@@ -522,11 +520,11 @@ $$
 * 在发生碰撞时，总线上传输的信号产生了严重的失真，无法从中恢复出有用的信息来。
 * **每一个正在发送数据的站，一旦发现总线上出现了碰撞，就要立即停止发送，免得继续浪费网络资源，然后等待一段随机时间后再次发送。**
 
-![image-20201013221240514](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201013221240514.png)
+![image-20201013221240514](ComputerNetwork/image-20201013221240514.png)
 
 > 为什么要进行碰撞检测？ 因为信号传播时延对载波监听产生了影响
 >
-> ![image-20201013221834942](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201013221834942.png)
+> ![image-20201013221834942](ComputerNetwork/image-20201013221834942.png)
 >
 > A 需要单程传播时延的 2 倍的时间，才能检测到与 B 的发送产生了冲突
 
@@ -534,43 +532,43 @@ $$
 
 ### CSMA/CD 协议工作流程
 
-![image-20201013221705893](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201013221705893.png)
+![image-20201013221705893](ComputerNetwork/image-20201013221705893.png)
 
 
 
  **CSMA/CD 协议工作——争用期（碰撞窗口）**
 
-![image-20201013223235305](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201013223235305.png)
+![image-20201013223235305](ComputerNetwork/image-20201013223235305.png)
 
 
 
  CSMA/CD 协议工作——最小帧长
 
-![image-20201013224051932](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201013224051932.png)
+![image-20201013224051932](ComputerNetwork/image-20201013224051932.png)
 
 
 
  CSMA/CD 协议工作——最大帧长
 
-![image-20201013225400777](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201013225400777.png)
+![image-20201013225400777](ComputerNetwork/image-20201013225400777.png)
 
 
 
 **CSMA/CD 协议工作——截断二进制指数退避算法**
 
-![image-20201013230717856](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201013230717856.png)
+![image-20201013230717856](ComputerNetwork/image-20201013230717856.png)
 
 
 
 **CSMA/CD 协议工作——信道利用率**
 
-![image-20201013231430295](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201013231430295.png)
+![image-20201013231430295](ComputerNetwork/image-20201013231430295.png)
 
 
 
 **CSMA/CD 协议工作——帧接收流程**
 
-![image-20201013231703302](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201013231703302.png)
+![image-20201013231703302](ComputerNetwork/image-20201013231703302.png)
 
 
 
@@ -592,19 +590,19 @@ $$
 
 ### 为什么无线局域网要使用CSMA/CA协议
 
-![image-20201014192811760](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201014192811760.png)
+![image-20201014192811760](ComputerNetwork/image-20201014192811760.png)
 
 
 
 ### 帧间间隔IFS（InterFrame Space）
 
-![image-20201014200149717](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201014200149717.png)
+![image-20201014200149717](ComputerNetwork/image-20201014200149717.png)
 
 
 
 ### CSMA/CA协议的工作原理
 
-![image-20201014200833233](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201014200833233.png)
+![image-20201014200833233](ComputerNetwork/image-20201014200833233.png)
 
 > **源站为什么在检测到信道空闲后还要再等待一段时间DIFS？**
 >
@@ -614,7 +612,7 @@ $$
 >
 > * SIFS是最短的帧间间隔，用来分隔开属于一次对话的各帧，在这段时间内，一个站点应当能够从发送方式切换到接收方式
 
-![image-20201014201511741](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201014201511741.png)
+![image-20201014201511741](ComputerNetwork/image-20201014201511741.png)
 
 > **信道由忙转为空闲且经过DIFS时间后，还要退避一段随机时间才能使用信道？**
 >
@@ -622,31 +620,31 @@ $$
 
 **使用退避算法的时机**
 
-![image-20201014201927680](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201014201927680.png)
+![image-20201014201927680](ComputerNetwork/image-20201014201927680.png)
 
 
 
 ### CSMA/CA协议的退避算法
 
-![image-20201014202213766](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201014202213766.png)
+![image-20201014202213766](ComputerNetwork/image-20201014202213766.png)
 
 **退避算法的示例**
 
-![image-20201014202819851](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201014202819851.png)
+![image-20201014202819851](ComputerNetwork/image-20201014202819851.png)
 
 
 
 ### CSMA/CA协议的信道预约和虚拟载波监听
 
-![image-20201014203119710](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201014203119710.png)
+![image-20201014203119710](ComputerNetwork/image-20201014203119710.png)
 
 
 
-![image-20201014203506878](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201014203506878.png)
+![image-20201014203506878](ComputerNetwork/image-20201014203506878.png)
 
 **虚拟载波监听机制能减少隐蔽站带来的碰撞问题的示例**
 
-![image-20201014203859033](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201014203859033.png)
+![image-20201014203859033](ComputerNetwork/image-20201014203859033.png)
 
 
 
@@ -656,7 +654,7 @@ $$
 
 ## MAC地址、IP地址以及ARP协议
 
-![image-20201014222831663](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201014222831663.png)
+![image-20201014222831663](ComputerNetwork/image-20201014222831663.png)
 
 
 
@@ -665,7 +663,7 @@ $$
 > * 使用点对点信道的数据链路层不需要使用地址
 > * 使用广播信道的数据链路层必须使用地址来区分各主机
 
-![image-20201014223659993](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201014223659993.png)
+![image-20201014223659993](ComputerNetwork/image-20201014223659993.png)
 
 
 
@@ -721,7 +719,7 @@ $$
 
 > 主机B给主机C发送**单播帧**，主机B首先要构建该**单播帧**，**在帧首部中的目的地址字段填入主机C的MAC地址**，源地址字段填入自己的MAC地址，再加上帧首部的其他字段、数据载荷以及帧尾部，就构成了该**单播帧**
 
-![image-20201014231244655](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201014231244655.png)
+![image-20201014231244655](ComputerNetwork/image-20201014231244655.png)
 
 > 主机B将该**单播帧**发送出去，主机A和C都会收到该**单播帧**
 >
@@ -735,11 +733,11 @@ $$
 
 ### 广播MAC地址举例
 
-![image-20201014231754669](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201014231754669.png)
+![image-20201014231754669](ComputerNetwork/image-20201014231754669.png)
 
 > 假设主机B要发送一个**广播帧**，主机B首先要构建该**广播帧**，**在帧首部中的目的地址字段填入广播地址**，也就是十六进制的全F，源地址字段填入自己的MAC地址，再加上帧首部中的其他字段、数据载荷以及帧尾部，就构成了该**广播帧**
 
-![image-20201014232132424](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201014232132424.png)
+![image-20201014232132424](ComputerNetwork/image-20201014232132424.png)
 
 > 主机B讲该**广播帧**发送出去，主机A和C都会收到该**广播帧**，**发现该帧首部中的目的地址字段的内容是广播地址**，就知道该帧是**广播帧**，主机A和主机C都接受该帧，并将该帧交给上层处理
 
@@ -747,7 +745,7 @@ $$
 
 ### 多播MAC地址举例
 
-![image-20201014232714791](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201014232714791.png)
+![image-20201014232714791](ComputerNetwork/image-20201014232714791.png)
 
 > 假设主机A要发送**多播帧**给该**多播地址**。将该**多播地址**的左起第一个字节写成8个比特，第一个字节的最低比特位是1，这就表明该地址是**多播地址**。
 >
@@ -755,15 +753,15 @@ $$
 >
 > 假设主机B，C和D支持多播，各用户给自己的主机配置多播组列表**如下所示**
 
-![image-20201015001243584](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015001243584.png)
+![image-20201015001243584](ComputerNetwork/image-20201015001243584.png)
 
 > 主机B属于两个多播组，主机C也属于两个多播组，而主机D不属于任何多播组
 
-![image-20201015001535528](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015001535528.png)
+![image-20201015001535528](ComputerNetwork/image-20201015001535528.png)
 
 > 主机A首先要构建该**多播帧**，**在帧首部中的目的地址字段填入该多播地址**，源地址点填入自己的MAC地址，再加上帧首部中的其他字段、数据载荷以及帧尾部，就构成了该**多播帧**
 
-![image-20201015002054876](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015002054876.png)
+![image-20201015002054876](ComputerNetwork/image-20201015002054876.png)
 
 > 主机A将该**多播帧**发送出去，主机B、C、D都会收到该**多播帧**
 >
@@ -783,13 +781,13 @@ IP地址属于网络层的范畴，不属于数据链路层的范畴
 
 ### 基本概念
 
-![image-20201015104441580](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015104441580.png)
+![image-20201015104441580](ComputerNetwork/image-20201015104441580.png)
 
 
 
 ### 从网络体系结构看IP地址与MAC地址
 
-![image-20201015104913755](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015104913755.png)
+![image-20201015104913755](ComputerNetwork/image-20201015104913755.png)
 
 
 
@@ -797,9 +795,9 @@ IP地址属于网络层的范畴，不属于数据链路层的范畴
 
 图上各主机和路由器各接口的IP地址和MAC地址用简单的标识符来表示
 
-![image-20201015105455043](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015105455043.png)
+![image-20201015105455043](ComputerNetwork/image-20201015105455043.png)
 
-![image-20210103212224961](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20210103212224961.png)
+![image-20210103212224961](ComputerNetwork/image-20210103212224961.png)
 
 > 如何从IP地址找出其对应的MAC地址？
 >
@@ -815,15 +813,15 @@ ARP（地址解析协议）
 
 ### 流程
 
-![image-20201015113826197](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015113826197.png)
+![image-20201015113826197](ComputerNetwork/image-20201015113826197.png)
 
 ARP高速缓存表
 
-![image-20201015114052206](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015114052206.png)
+![image-20201015114052206](ComputerNetwork/image-20201015114052206.png)
 
 > 当主机B要给主机C发送数据包时，会首先在自己的ARP高速缓存表中查找主机C的IP地址所对应的MAC地址，但未找到，因此，主机B需要发送ARP请求报文，来获取主机C的MAC地址
 
-![image-20201015114444263](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015114444263.png)
+![image-20201015114444263](ComputerNetwork/image-20201015114444263.png)
 
 > ARP请求报文有具体的格式，上图的只是简单描述
 >
@@ -831,7 +829,7 @@ ARP高速缓存表
 >
 > 主机B发送封装有ARP请求报文的广播帧，总线上的其他主机都能收到该广播帧
 
-![image-20201015114811501](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015114811501.png)
+![image-20201015114811501](ComputerNetwork/image-20201015114811501.png)
 
 > 收到ARP请求报文的主机A和主机C会把ARP请求报文交给上层的ARP进程
 >
@@ -839,21 +837,21 @@ ARP高速缓存表
 >
 > 主机C的发现所询问的IP地址是自己的IP地址，需要进行相应
 
-![image-20201015115212170](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015115212170.png)
+![image-20201015115212170](ComputerNetwork/image-20201015115212170.png)
 
-![image-20201015115236673](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015115236673.png)
+![image-20201015115236673](ComputerNetwork/image-20201015115236673.png)
 
-![image-20201015115252972](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015115252972.png)
+![image-20201015115252972](ComputerNetwork/image-20201015115252972.png)
 
 动态与静态的区别
 
-![image-20201015115831543](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015115831543.png)
+![image-20201015115831543](ComputerNetwork/image-20201015115831543.png)
 
 
 
 **ARP协议只能在一段链路或一个网络上使用，而不能跨网络使用**
 
-![image-20201015120108028](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015120108028.png)
+![image-20201015120108028](ComputerNetwork/image-20201015120108028.png)
 
 > ARP协议的使用是逐段链路进行的
 
@@ -861,7 +859,7 @@ ARP高速缓存表
 
 ### 总结
 
-![image-20201015120707150](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015120707150.png)
+![image-20201015120707150](ComputerNetwork/image-20201015120707150.png)
 
 > ARP表中的IP地址与MAC地址的对应关系记录，是**会定期自动删除的**，**因为IP地址与MAC地址的对应关系不是永久性的**
 
@@ -875,7 +873,7 @@ ARP高速缓存表
 
 ### 概念
 
-![image-20201015144628691](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015144628691.png)
+![image-20201015144628691](ComputerNetwork/image-20201015144628691.png)
 
 > * 传统以太网最初是使用粗同轴电缆，后来演进到使用比较便宜的细同轴电缆，最后发展为使用更便宜和更灵活的双绞线。
 > * 采用双绞线的以太网采用星形拓扑，在星形的中心则增加了一种可靠性非常高的设备，叫做**集线器** (hub)。
@@ -888,7 +886,7 @@ ARP高速缓存表
 
 **使用集线器扩展**：将多个以太网段连成更大的、多级星形结构的以太网
 
-![image-20201015145732275](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015145732275.png)
+![image-20201015145732275](ComputerNetwork/image-20201015145732275.png)
 
 > * **优点**
 >   1. 使原来属于不同碰撞域的以太网上的计算机能够进行跨碰撞域的通信。
@@ -911,7 +909,7 @@ ARP高速缓存表
 * 扩展以太网更常用的方法是在数据链路层进行。
 * 早期使用**网桥**，现在使用**以太网交换机**。
 
-![image-20201015150620067](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015150620067.png)
+![image-20201015150620067](ComputerNetwork/image-20201015150620067.png)
 
 > **网桥**
 >
@@ -929,7 +927,7 @@ ARP高速缓存表
 
 ### **集线器HUB与交换机SWITCH区别**
 
-![image-20201015152232158](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015152232158.png)
+![image-20201015152232158](ComputerNetwork/image-20201015152232158.png)
 
 > 使用**集线器**互连而成的共享总线式以太网上的某个主机，要给另一个主机发送单播帧，该单播帧会通过共享总线传输到**总线上的其他各个主机**
 >
@@ -939,7 +937,7 @@ ARP高速缓存表
 
 
 
-![image-20201015152858146](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015152858146.png)
+![image-20201015152858146](ComputerNetwork/image-20201015152858146.png)
 
 > **以太网交换机的交换方式**
 >
@@ -955,9 +953,9 @@ ARP高速缓存表
 
 **对比集线器和交换机**
 
-![image-20201015153907268](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015153907268.png)
+![image-20201015153907268](ComputerNetwork/image-20201015153907268.png)
 
-![image-20201015154523036](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015154523036.png)
+![image-20201015154523036](ComputerNetwork/image-20201015154523036.png)
 
 > 多台主机同时给另一台主机发送单播帧
 >
@@ -973,17 +971,17 @@ ARP高速缓存表
 
 **单播**
 
-![image-20201015155408692](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015155408692.png)
+![image-20201015155408692](ComputerNetwork/image-20201015155408692.png)
 
 **广播**
 
-![image-20201015155440402](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015155440402.png)
+![image-20201015155440402](ComputerNetwork/image-20201015155440402.png)
 
 **多个单播**
 
-![image-20201015155526386](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015155526386.png)
+![image-20201015155526386](ComputerNetwork/image-20201015155526386.png)
 
-![image-20201015155706698](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015155706698.png)
+![image-20201015155706698](ComputerNetwork/image-20201015155706698.png)
 
 广播域（broadcast domain）：指这样一部分网络，其中任何一台设备发出的广播通信都能被该部分网络中的所有其他设备所接收。
 
@@ -991,7 +989,7 @@ ARP高速缓存表
 
 **总结**
 
-![image-20201015160146482](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015160146482.png)
+![image-20201015160146482](ComputerNetwork/image-20201015160146482.png)
 
 ![image-20201015160526999](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015160526999.png)
 
@@ -1015,7 +1013,7 @@ ARP高速缓存表
 
 **A -> B**
 
-![image-20201015161458528](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015161458528.png)
+![image-20201015161458528](ComputerNetwork/image-20201015161458528.png)
 
 > 1. A 先向 B 发送一帧。该帧从接口 1 进入到交换机
 > 2. 交换机收到帧后，先查找（图中左边）交换表。没有查到应从哪个接口转发这个帧给 B
@@ -1028,7 +1026,7 @@ ARP高速缓存表
 
 **B -> A**
 
-![image-20201015162310922](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015162310922.png)
+![image-20201015162310922](ComputerNetwork/image-20201015162310922.png)
 
 > 1. B 向 A 发送一帧。该帧从接口 3 进入到交换机
 > 2. 交换机收到帧后，先查找（图中左边）交换表。发现（图中左边）交换表中的 MAC 地址有 A，表明要发送给A的帧应从接口1转发出去。于是就把这个帧传送到接口 1 转发给 A。
@@ -1037,7 +1035,7 @@ ARP高速缓存表
 
 **E -> A**
 
-![image-20201015162622462](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015162622462.png)
+![image-20201015162622462](ComputerNetwork/image-20201015162622462.png)
 
 > 1. E 向 A发送一帧
 > 2. 交换机收到帧后，先查找（图中右边）交换表。发现（图中右边）交换表中的 MAC 地址有 A，表明要发送给A的帧应从接口2转发出去。于是就把这个帧传送到接口 2 转发给 接口 4。
@@ -1048,7 +1046,7 @@ ARP高速缓存表
 
 **G -> A**
 
-![image-20201015163157140](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015163157140.png)
+![image-20201015163157140](ComputerNetwork/image-20201015163157140.png)
 
 > 主机 A、主机 G、交换机 1的接口 1就共享同一条总线（相当于总线式网络，可以想象成用集线器连接了）
 >
@@ -1061,7 +1059,7 @@ ARP高速缓存表
 
 随着网络中各主机都发送了帧后，网络中的各交换机就可以学习到各主机的MAC地址，以及它们与自己各接口的对应关系
 
-![image-20201015164210543](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015164210543.png)
+![image-20201015164210543](ComputerNetwork/image-20201015164210543.png)
 
 > 考虑到可能有时要在交换机的接口更换主机，或者主机要更换其网络适配器，这就需要更改交换表中的项目。为此，在交换表中每个项目都设有一定的**有效时间**。**过期的项目就自动被删除**。
 >
@@ -1073,9 +1071,9 @@ ARP高速缓存表
 
 **交换机自学习和转发帧的步骤归纳**
 
-![image-20201015170656500](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015170656500.png)
+![image-20201015170656500](ComputerNetwork/image-20201015170656500.png)
 
-![image-20201015170739679](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015170739679.png)
+![image-20201015170739679](ComputerNetwork/image-20201015170739679.png)
 
 
 
@@ -1087,11 +1085,11 @@ ARP高速缓存表
 
 **如何提高以太网的可靠性**
 
-![image-20201015171453001](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015171453001.png)
+![image-20201015171453001](ComputerNetwork/image-20201015171453001.png)
 
-![image-20201015171515481](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015171515481.png)
+![image-20201015171515481](ComputerNetwork/image-20201015171515481.png)
 
-![image-20201015171900775](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015171900775.png)
+![image-20201015171900775](ComputerNetwork/image-20201015171900775.png)
 
 
 
@@ -1102,7 +1100,7 @@ ARP高速缓存表
 > * IEEE 802.1D 标准制定了一个**生成树协议 STP**  (Spanning Tree Protocol)。
 > * 其**要点**是：**不改变**网络的实际拓扑，但在逻辑上则切断某些链路，使得从一台主机到所有其他主机的路径是**无环路的树状结构**，从而消除了兜圈子现象。
 
-![image-20201015202257756](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015202257756.png)
+![image-20201015202257756](ComputerNetwork/image-20201015202257756.png)
 
 
 
@@ -1116,11 +1114,11 @@ ARP高速缓存表
 
 **广播风暴**
 
-![image-20201015202859124](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015202859124.png)
+![image-20201015202859124](ComputerNetwork/image-20201015202859124.png)
 
 **分割广播域的方法**
 
-![image-20201015203113654](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015203113654.png)
+![image-20201015203113654](ComputerNetwork/image-20201015203113654.png)
 
 > 为了分割广播域，所以虚拟局域网VLAN技术应运而生
 
@@ -1128,7 +1126,7 @@ ARP高速缓存表
 
 **概念**
 
-![image-20201015203559548](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015203559548.png)
+![image-20201015203559548](ComputerNetwork/image-20201015203559548.png)
 
 > * 利用以太网交换机可以很方便地实现虚拟局域网 VLAN (Virtual LAN)。
 > * IEEE 802.1Q 对虚拟局域网 VLAN 的**定义**：
@@ -1146,15 +1144,15 @@ ARP高速缓存表
 * 能够处理带有VLAN标记的帧——IEEE 802.1 Q帧
 * 交换机的各端口可以支持不同的端口类型，不同端口类型的端口对帧的处理方式有所不同
 
-![image-20201015204639599](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015204639599.png)
+![image-20201015204639599](ComputerNetwork/image-20201015204639599.png)
 
-![image-20201015204749141](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015204749141.png)
+![image-20201015204749141](ComputerNetwork/image-20201015204749141.png)
 
 **Access端口**
 
 交换机与用户计算机之间的互连
 
-![image-20201015205311757](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015205311757.png)
+![image-20201015205311757](ComputerNetwork/image-20201015205311757.png)
 
 > 同一个VLAN内部可以广播通信，不同VLAN不可以广播通信
 
@@ -1162,27 +1160,27 @@ ARP高速缓存表
 
 交换机之间或交换机与路由器之间的互连
 
-![image-20201015205947636](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015205947636.png)
+![image-20201015205947636](ComputerNetwork/image-20201015205947636.png)
 
 
 
 **小例题**
 
-![image-20201015210417695](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015210417695.png)
+![image-20201015210417695](ComputerNetwork/image-20201015210417695.png)
 
 
 
 **华为交换机私有的Hybrid端口类型**
 
-![image-20201015211031361](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015211031361.png)
+![image-20201015211031361](ComputerNetwork/image-20201015211031361.png)
 
-![image-20201015211349531](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015211349531.png)
+![image-20201015211349531](ComputerNetwork/image-20201015211349531.png)
 
 
 
 ## 总结
 
-![image-20201015211512622](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015211512622.png)
+![image-20201015211512622](ComputerNetwork/image-20201015211512622.png)
 
 > **虚拟局域网优点**
 >

@@ -285,7 +285,7 @@
 
 大图展示
 
-<img src="ComputerNetwork/image-20211208003119279.png" alt="image-20211208003119279" style="zoom:200%;" />
+![image-20211207234519152](ComputerNetwork/image-20211208003119279.png)
 
 
 
