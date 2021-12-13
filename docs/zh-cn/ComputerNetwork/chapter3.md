@@ -669,7 +669,7 @@ $$
 
 ### 广播信道的数据链路层必须使用地址（MAC）
 
-![image-20201014224732019](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201014224732019.png)
+![image-20201014224732019](ComputerNetwork/1231231.png)
 
 > **MAC地址又称为硬件地址或物理地址**。请注意：不要被 “物理” 二字误导认为物理地址属于物理层范畴，物理地址属于数据链路层范畴
 
@@ -677,7 +677,7 @@ $$
 
 ### IEEE 802局域网的MAC地址格式
 
-![image-20201014225358570](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201014225358570.png)
+![image-20201014225358570](ComputerNetwork/image-20201014225358570.png)
 
 > **组织唯一标识符OUI**
 >
@@ -691,7 +691,7 @@ $$
 >
 > * 48是这个MAC地址的位数
 
-![image-20201014230248959](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201014230248959.png)
+![image-20201014230248959](ComputerNetwork/image-20201014230248959.png)
 
 > 对于使用EUI-48空间的应用程序，IEEE的目标寿命为100年（直到2080年），但是鼓励采用EUI-64作为替代
 
@@ -709,13 +709,13 @@ $$
 
 ### IEEE 802局域网的MAC地址发送顺序
 
-![image-20201014230625182](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201014230625182.png)
+![image-20201014230625182](ComputerNetwork/image-20201014230625182.png)
 
 
 
 ### 单播MAC地址举例
 
-![image-20201014230822305](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201014230822305.png)
+![image-20201014230822305](ComputerNetwork/image-20201014230822305.png)
 
 > 主机B给主机C发送**单播帧**，主机B首先要构建该**单播帧**，**在帧首部中的目的地址字段填入主机C的MAC地址**，源地址字段填入自己的MAC地址，再加上帧首部的其他字段、数据载荷以及帧尾部，就构成了该**单播帧**
 
@@ -991,7 +991,7 @@ ARP高速缓存表
 
 ![image-20201015160146482](ComputerNetwork/image-20201015160146482.png)
 
-![image-20201015160526999](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015160526999.png)
+![image-20201015160526999](ComputerNetwork/image-20201015160526999.png)
 
 > 工作在数据链路层的以太网交换机，其性能远远超过工作在物理层的集线器，而且价格并不贵，这就使得集线器逐渐被市场淘汰
 
@@ -1005,7 +1005,7 @@ ARP高速缓存表
 
 **概念**
 
-![image-20201015161015165](C:/Users/86135/Desktop/Computer-Network-Notes-master/计算机网络第三章（数据链路层）.assets/image-20201015161015165.png)
+![image-20201015161015165](ComputerNetwork/image-20201015161015165.png)
 
 **自学习和转发帧的例子**
 

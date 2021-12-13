@@ -128,7 +128,7 @@
 
 **小结**
 
-![image-20211211115350772](C:\Users\86135\AppData\Roaming\Typora\typora-user-images\image-20211211115350772.png)
+![image-20211211115350772](ComputerNetwork/image-20211211115350772.png)
 
 
 
