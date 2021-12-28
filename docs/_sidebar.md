@@ -3,7 +3,7 @@
 - 算法
     - [Binary Search and  BFS](zh-cn/AlgorithmsAndDataStructures/Algorithms_1.md)
     - [回溯 和 滑动窗口](zh-cn/AlgorithmsAndDataStructures/Algorithms_2.md)
-    - [bit operation](zh-cn/AlgorithmsAndDataStructures/Algorithms_3.md))
+    - [bit operation](zh-cn/AlgorithmsAndDataStructures/Algorithms_3.md)
 - 计算机网络
     - [概述](zh-cn/ComputerNetwork/chapter1.md)
     - [物理层](zh-cn/ComputerNetwork/chapter2.md)
