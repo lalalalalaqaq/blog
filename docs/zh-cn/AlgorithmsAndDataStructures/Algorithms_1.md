@@ -37,50 +37,84 @@ class Solution {
     
 }
 
-// 拓展
-// https://www.cnblogs.com/kyoner/p/11080078.html
-// 左边界
-int left_bound(int[] nums, int target) {
-    if (nums.length == 0) return -1;
-    int left = 0;
-    int right = nums.length; // 注意
 
-    while (left < right) { // 注意
-        int mid = (left + right) / 2;
-        if (nums[mid] == target) {
-            right = mid;
-        } else if (nums[mid] < target) {
+    
+    
+//lc 34 关于左边界与右边界
+
+public int[] searchRange(int[] nums, int target) {
+    return new int[]{left_bound(nums, target), right_bound(nums, target)};
+}
+
+public int left_bound(int[] nums, int target){
+    int left = 0;
+    int right = nums.length - 1;
+
+    while ( left <= right){
+        int mid = left + (right - left) / 2;
+        if (nums[mid] < target){
             left = mid + 1;
-        } else if (nums[mid] > target) {
-            right = mid; // 注意
+        }else if(nums[mid] > target){
+            right = mid - 1;
+        }else{
+            right = mid - 1; 
         }
     }
+    // 出界处理
+    if (left >= nums.length || nums[left] != target){
+        return -1;
+    }  
     return left;
 }
 
 
-// 右边界
-int right_bound(int[] nums, int target) {
-    if (nums.length == 0) return -1;
-    int left = 0, right = nums.length;
+public int right_bound(int[] nums, int target){
+    int left = 0;
+    int right = nums.length - 1;
 
-    while (left < right) {
-        int mid = (left + right) / 2;
-        if (nums[mid] == target) {
-            left = mid + 1; // 注意
-        } else if (nums[mid] < target) {
+    while ( left <= right){
+        int mid = left + (right - left) / 2;
+        if (nums[mid] < target){
             left = mid + 1;
-        } else if (nums[mid] > target) {
-            right = mid;
+        }else if(nums[mid] > target){
+            right = mid - 1;
+        }else{
+            left = mid + 1; 
         }
     }
-    return left - 1; // 注意
-    
-    
+    if (left == 0) return -1;
+    return nums[left - 1] == target ? (left - 1) : -1;
+}
+
 
 ```
 
+```java
+// lc 74 二维矩阵的二分
+// 从左下角开始二分查找
+// 路径跟搜对角线差不多
+public boolean searchMatrix(int[][] matrix, int target) {
+        if(matrix.length == 0){
+            return false;
+        }
 
+        int row = 0 ;
+        int col = matrix[0].length-1;
+
+        while (row < matrix.length && col >= 0){
+            if(matrix[row][col] < target){
+                row++;
+            }else if (matrix[row][col] > target){
+                col--;
+            }else{
+                return true;
+            }
+        }
+
+        return false;
+
+    }
+```
 
 
 
