@@ -1,9 +1,11 @@
 - 前言
     - [碎碎念](zh-cn/README.md)
 - 算法
-    - [Binary Search and  BFS](zh-cn/AlgorithmsAndDataStructures/Algorithms_1.md)
+    - [二分查找 和广度优先](zh-cn/AlgorithmsAndDataStructures/Algorithms_1.md)
     - [回溯 和 滑动窗口](zh-cn/AlgorithmsAndDataStructures/Algorithms_2.md)
-    - [bit operation](zh-cn/AlgorithmsAndDataStructures/Algorithms_3.md)
+    - [位操作](zh-cn/AlgorithmsAndDataStructures/Algorithms_3.md)
+    - [二叉树](zh-cn/AlgorithmsAndDataStructures/Algorithms_4.md)
+    - [前缀和](zh-cn/AlgorithmsAndDataStructures/Algorithms_5.md)
 - 计算机网络
     - [概述](zh-cn/ComputerNetwork/chapter1.md)
     - [物理层](zh-cn/ComputerNetwork/chapter2.md)
@@ -22,6 +24,7 @@
     - [同步](zh-cn/OS/OS_c9.md)
     - [信号量和管程](zh-cn/OS/OS_c10.md)
     - [死锁与进程通信](zh-cn/OS/OS_c11.md)
+    - [文件管理](zh-cn/OS/OS_c12.md)
 - SpringSecurity
     - [为什么有Security](zh-cn/SpringSecurity/Spring_Security_1.md)
 
