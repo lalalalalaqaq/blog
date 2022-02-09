@@ -24,7 +24,9 @@
 
 ​		大一和师兄的聊天，脑子时刻问自己的“多样性”，其实是“发展”。不得不说，大一是真没脑子。我想当时师兄已经被问傻了，太理想主义了。
 
-​		<img src="Record/Record/image-20220209163542961.png" alt="image-20220209163542961" style="zoom: 67%;" />
+
+[![HGbssA.md.png](https://s4.ax1x.com/2022/02/09/HGbssA.md.png)](https://imgtu.com/i/HGbssA)
+
 
 ​		零零碎碎词不达意，最后简单说一下：好好往就业努力吧。发展还是多样性都不重要了，自己选的路，好好走。
 
@@ -61,7 +63,8 @@
 
 ### 摆！！！！！！
 
-![img](Record/Record/baidalan.jpg)
+
+[![HGbrMd.jpg](https://s4.ax1x.com/2022/02/09/HGbrMd.jpg)](https://imgtu.com/i/HGbrMd)
 
 
 
