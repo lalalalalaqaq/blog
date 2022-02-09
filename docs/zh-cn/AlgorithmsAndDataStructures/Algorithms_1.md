@@ -116,6 +116,93 @@ public boolean searchMatrix(int[][] matrix, int target) {
     }
 ```
 
+#### [875. 爱吃香蕉的珂珂](https://leetcode-cn.com/problems/koko-eating-bananas/)
+
+- 左边界的查找
+- int f 才是关键
+  - 将一个序列抽象成函数再二分查找
+
+```java
+ public int minEatingSpeed(int[] piles, int h) {
+        int left = 1;
+        int right = 1000000000 + 1;
+        while( left < right){
+
+            int mid  = left + (right - left) / 2; 
+            if(f(piles,mid) > h){
+                left = mid + 1;
+            }else if(f(piles,mid) < h){
+                right = mid;
+            }else{
+                right = mid;
+            }
+        }
+
+        return left;
+
+    }
+
+    int f(int[] piles , int x){
+        int hours = 0;
+        for(int i = 0; i < piles.length; i++){
+            hours += piles[i] / x;
+            if(piles[i] % x > 0){
+                hours++;
+            }
+        }
+        return hours;
+    }
+```
+
+#### [1011. 在 D 天内送达包裹的能力](https://leetcode-cn.com/problems/capacity-to-ship-packages-within-d-days/)
+
+- 左边界的查找
+- 搜索区间应该是[max(weights),sum(weights)]
+- 做一个映射f : weights -> days 
+  - 即讲区间的 weights 映射成一个 days 的序列
+  - 搜寻左侧边界
+
+```java
+public int shipWithinDays(int[] weights, int days) {
+        int left = 0;
+        int right = 1;
+        for(int w : weights){
+            left = Math.max(left, w); // 保证最小的载重能载最重的货物
+            right += w;   // 一次搬运
+        }
+
+        while (left < right){
+            int mid = left + (right - left) / 2;
+            if(f(weights,mid) > days){
+                left = mid + 1;
+            } else if(f(weights,mid) < days){
+                right = mid;
+            }else{
+                right = mid;
+            }
+        }
+
+        return left;
+
+    }
+
+
+    int f(int[] weights, int x) {
+    int days = 0;
+    for (int i = 0; i < weights.length; ) {
+        // 尽可能多装货物
+        int cap = x;
+        while (i < weights.length) {
+            if (cap < weights[i]) break;
+            else cap -= weights[i];
+            i++;
+        }
+        days++;
+    }
+    return days;
+    }
+```
+
 
 
 #### 广度优先
